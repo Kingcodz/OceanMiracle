@@ -18,7 +18,7 @@ font-family: 'Inter', sans-serif;
 scroll-behavior: smooth;
 }
 .hero-section {
-background-image: url('https://readdy.ai/api/search-image?query=modern%2520elegant%2520showroom%2520with%2520luxury%2520chandeliers%2520and%2520electrical%2520components%2520displayed%2520beautifully%252C%2520bright%2520well-lit%2520space%2520with%2520professional%2520atmosphere%252C%2520premium%2520quality%2520building%2520materials%252C%2520gradient%2520blue%2520to%2520white%2520background%2520on%2520left%2520side%2520for%2520text%2520placement&width=1600&height=800&seq=1&orientation=landscape');
+background-image: url('./images/hero-section-image.jpg');
 background-size: cover;
 background-position: center right;
 }
@@ -115,7 +115,7 @@ Request a Quote
 <button id="contactUsBtn" class="bg-white hover:bg-gray-100 text-primary border border-primary py-3 px-8 font-medium !rounded-button whitespace-nowrap">
 Contact Us
 </button>
-<div id="contactModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+<div id="contactModal" class="hidden absolute top-0 left-0 w-full min-h-screen bg-transparent flex items-center justify-center z-50">
 <div class="bg-white rounded-lg w-full max-w-2xl mx-4 relative">
 <button id="closeModal" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
 <div class="w-8 h-8 flex items-center justify-center">
@@ -215,7 +215,7 @@ Send Message
 <!-- Category 1 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=luxury%2520modern%2520chandeliers%2520and%2520lighting%2520fixtures%2520displayed%2520in%2520elegant%2520showroom%252C%2520various%2520pendant%2520lights%2520and%2520ceiling%2520lamps%2520with%2520crystal%2520and%2520metal%2520designs%252C%2520professional%2520product%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=2&orientation=landscape" alt="Lighting Products" class="w-full h-full object-cover object-top">
+<img src="./images/product-img1.jpg" alt="Lighting Products" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
@@ -223,18 +223,13 @@ Send Message
 </div>
 <h3 class="text-xl font-semibold text-gray-900 mb-2">Lighting</h3>
 <p class="text-gray-600 mb-4">Chandeliers, POP lights, bulbs, and decorative lighting solutions for any space.</p>
-<a href="#" class="inline-flex items-center text-primary font-medium">
-View Products
-<div class="w-5 h-5 flex items-center justify-center ml-1">
-<i class="ri-arrow-right-line"></i>
-</div>
-</a>
+
 </div>
 </div>
 <!-- Category 2 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=professional%2520electrical%2520accessories%2520including%2520sockets%252C%2520wires%252C%2520switches%2520and%2520electrical%2520components%2520neatly%2520arranged%2520on%2520display%252C%2520high-quality%2520building%2520materials%2520for%2520construction%252C%2520clean%2520white%2520background%2520for%2520product%2520showcase&width=600&height=400&seq=3&orientation=landscape" alt="Electrical Accessories" class="w-full h-full object-cover object-top">
+<img src="./images/product-img2.jpg" alt="Electrical Accessories" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
@@ -242,18 +237,12 @@ View Products
 </div>
 <h3 class="text-xl font-semibold text-gray-900 mb-2">Electrical Accessories</h3>
 <p class="text-gray-600 mb-4">Sockets, wires, changeover switches, lightning rods, and more.</p>
-<a href="#" class="inline-flex items-center text-primary font-medium">
-View Products
-<div class="w-5 h-5 flex items-center justify-center ml-1">
-<i class="ri-arrow-right-line"></i>
-</div>
-</a>
 </div>
 </div>
 <!-- Category 3 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=modern%2520ceiling%2520fans%2520and%2520standing%2520fans%2520displayed%2520in%2520showroom%252C%2520variety%2520of%2520cooling%2520solutions%2520for%2520home%2520and%2520office%252C%2520elegant%2520designs%2520with%2520different%2520finishes%252C%2520professional%2520product%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=4&orientation=landscape" alt="Cooling Solutions" class="w-full h-full object-cover object-top">
+<img src="./images/product-img3.jpg" alt="Cooling Solutions" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
@@ -261,18 +250,12 @@ View Products
 </div>
 <h3 class="text-xl font-semibold text-gray-900 mb-2">Cooling Solutions</h3>
 <p class="text-gray-600 mb-4">Ceiling fans, standing fans, and ventilation systems for optimal comfort.</p>
-<a href="#" class="inline-flex items-center text-primary font-medium">
-View Products
-<div class="w-5 h-5 flex items-center justify-center ml-1">
-<i class="ri-arrow-right-line"></i>
-</div>
-</a>
 </div>
 </div>
 <!-- Category 4 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=professional%2520building%2520materials%2520display%2520with%2520various%2520construction%2520supplies%2520neatly%2520arranged%252C%2520high-quality%2520materials%2520for%2520contractors%2520and%2520builders%252C%2520clean%2520organized%2520presentation%2520with%2520white%2520background%2520for%2520product%2520showcase&width=600&height=400&seq=5&orientation=landscape" alt="Building Materials" class="w-full h-full object-cover object-top">
+<img src="./images/product-img4.jpg" alt="Building Materials" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
@@ -280,12 +263,6 @@ View Products
 </div>
 <h3 class="text-xl font-semibold text-gray-900 mb-2">Building Materials</h3>
 <p class="text-gray-600 mb-4">Quality construction supplies for residential and commercial projects.</p>
-<a href="#" class="inline-flex items-center text-primary font-medium">
-View Products
-<div class="w-5 h-5 flex items-center justify-center ml-1">
-<i class="ri-arrow-right-line"></i>
-</div>
-</a>
 </div>
 </div>
 </div>
@@ -307,7 +284,7 @@ Learn More About Us
 </div>
 </div>
 <div class="md:w-1/2">
-<img src="https://readdy.ai/api/search-image?query=modern%2520electrical%2520supply%2520showroom%2520interior%2520with%2520professional%2520staff%2520helping%2520customers%252C%2520displays%2520of%2520chandeliers%252C%2520fans%2520and%2520electrical%2520components%252C%2520bright%2520well-organized%2520space%2520with%2520clean%2520white%2520background&width=600&height=450&seq=6&orientation=landscape" alt="Ocean Miracle Showroom" class="w-full h-auto rounded-lg shadow-lg">
+<img src="./images/aboutIMGindex1.jpg" alt="Ocean Miracle Showroom" class="w-full h-auto rounded-lg shadow-lg">
 </div>
 </div>
 </div>
@@ -323,7 +300,7 @@ Learn More About Us
 <!-- Resource 1 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=elegant%2520home%2520interior%2520with%2520various%2520light%2520fixtures%2520and%2520chandeliers%2520showing%2520different%2520lighting%2520options%2520for%2520living%2520spaces%252C%2520professional%2520interior%2520design%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=7&orientation=landscape" alt="Light Fixture Guide" class="w-full h-full object-cover object-top">
+<img src="./images/resourceIMG1.jpg" alt="Light Fixture Guide" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <h3 class="text-xl font-semibold text-gray-900 mb-3">How to Choose the Right Light Fixtures</h3>
@@ -339,7 +316,7 @@ Read More
 <!-- Resource 2 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=modern%2520ceiling%2520fan%2520installation%2520in%2520elegant%2520room%2520showing%2520proper%2520placement%2520for%2520optimal%2520airflow%252C%2520energy%2520efficient%2520cooling%2520solution%2520for%2520home%252C%2520professional%2520interior%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=8&orientation=landscape" alt="Fan Efficiency Tips" class="w-full h-full object-cover object-top">
+<img src="./images/resourceIMG2.jpg" alt="Fan Efficiency Tips" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <h3 class="text-xl font-semibold text-gray-900 mb-3">Fan Placement and Energy Efficiency Tips</h3>
@@ -355,7 +332,7 @@ Read More
 <!-- Resource 3 -->
 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
 <div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=professional%2520electrician%2520safely%2520working%2520on%2520electrical%2520panel%2520wearing%2520proper%2520safety%2520equipment%252C%2520electrical%2520safety%2520demonstration%2520for%2520homeowners%252C%2520clean%2520organized%2520workspace%2520with%2520white%2520background&width=600&height=400&seq=9&orientation=landscape" alt="Electrical Safety" class="w-full h-full object-cover object-top">
+<img src="./images/resourceIMG3.jpg" alt="Electrical Safety" class="w-full h-full object-cover object-top">
 </div>
 <div class="p-6">
 <h3 class="text-xl font-semibold text-gray-900 mb-3">Electrical Safety for Homeowners</h3>
@@ -540,7 +517,7 @@ Read More
 <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
 <p class="text-white/90 max-w-2xl mx-auto mb-8">Contact our team of experts today to discuss your building material and electrical component needs</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4"><a href="https://wa.me/+2348166372734">
-<button class="bg-white hover:bg-gray-100 text-primary py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+<button  class="bg-white hover:bg-gray-100 text-primary py-3 px-8 font-medium !rounded-button whitespace-nowrap">
 Talk to Us
 </button></a>
 
@@ -670,7 +647,14 @@ const contactForm = document.getElementById('contactForm');
 contactButtons.forEach(button => {
 button.addEventListener('click', () => {
 contactModal.classList.remove('hidden');
-document.body.style.overflow = 'hidden';
+contactButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    contactModal.classList.remove('hidden');
+    // REMOVE or comment out the next line
+    // document.body.style.overflow = 'hidden';
+  });
+});
+
 });
 });
 closeModal.addEventListener('click', () => {
