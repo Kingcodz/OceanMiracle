@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean Miracle LTD - Building Materials & Electrical Components</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0078c8',secondary:'#f59e0b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+scroll-behavior: smooth;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=modern%2520elegant%2520showroom%2520with%2520luxury%2520chandeliers%2520and%2520electrical%2520components%2520displayed%2520beautifully%252C%2520bright%2520well-lit%2520space%2520with%2520professional%2520atmosphere%252C%2520premium%2520quality%2520building%2520materials%252C%2520gradient%2520blue%2520to%2520white%2520background%2520on%2520left%2520side%2520for%2520text%2520placement&width=1600&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.hero-content {
+background: linear-gradient(90deg, rgba(255,255,255,0.95) 40%, rgba(255,255,255,0) 100%);
+}
+input:focus {
+outline: none;
+}
+.testimonial-container {
+overflow: hidden;
+position: relative;
+}
+.testimonial-slider {
+display: flex;
+animation: slide 30s infinite linear;
+}
+@keyframes slide {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.animate-fade-in-up {
+animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-delay-100 { animation-delay: 0.3s; }
+.animate-delay-200 { animation-delay: 0.4s; }
+.animate-delay-300 { animation-delay: 0.5s; }
+.animate-delay-400 { animation-delay: 0.6s; }
+.hover-scale {
+transition: transform 0.5s ease;
+}
+.hover-scale:hover {
+transform: translateY(-15px);
+}
+.hover-shadow {
+transition: box-shadow 0.3s ease;
+}
+.hover-shadow:hover {
+box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header Navigation -->
+<header class="bg-white shadow-sm fixed w-full z-50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center py-4">
+<div class="flex items-center">
+<a href="#" class="font-['Pacifico'] text-primary text-2xl">Ocean Miracle Ltd</a>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a href="./index.html" class="text-primary font-medium">Home</a>
+<a href="#oceanmiracle-products" class="text-gray-700 hover:text-primary font-medium">Products</a>
+<a href="./index2.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">About Us</a>
+<a href="index2.html#contact-section" id="navContactLink" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="tel:+1234567890" class="hidden md:flex items-center text-gray-700 hover:text-primary">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span class="font-medium">+234 816 637 2734</span>
+</a>
+<a href="https://wa.me/+2348166372734" class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full">
+<i class="ri-whatsapp-line"></i>
+</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section pt-24 pb-16 md:py-32">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="hero-content max-w-2xl py-16 px-8 md:px-12">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up">Your Trusted Source for Building and Electrical Materials</h1>
+<p class="text-lg text-gray-700 mb-8 animate-fade-in-up animate-delay-100">Premium quality products for homeowners, contractors, and construction firms. Elevate your projects with our extensive range of electrical components and building materials.</p>
+<div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-200">
+<!-- <button class="bg-primary hover:bg-primary/90 text-white py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+Request a Quote
+</button> -->
+<button id="contactUsBtn" class="bg-white hover:bg-gray-100 text-primary border border-primary py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+Contact Us
+</button>
+<div id="contactModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+<div class="bg-white rounded-lg w-full max-w-2xl mx-4 relative">
+<button id="closeModal" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+<div class="p-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<form id="contactForm">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+<input type="text" id="contactName" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+<input type="email" id="contactEmail" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+<input type="tel" id="contactPhone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+<input type="text" id="contactSubject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+<textarea id="contactMessage" name="message" required rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+Send Message
+</button>
+</div>
+</form>
+</div>
+<div class="space-y-6">
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Alternative Contact Methods</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-map-pin-line text-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Address</h4>
+<p class="text-gray-600">12 Okpanam Road, Market<br>Nigeria, Asaba 420320</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-phone-line text-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Phone</h4>
+<p class="text-gray-600">0816-637-2734</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-mail-line text-xl"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Email</h4>
+<p class="text-gray-600">info@oceanmiracle.com</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Business Hours</h3>
+<div class="space-y-2 text-gray-600">
+<p>Monday - Friday: 8:30 AM - 6:00 PM</p>
+<p>Saturday: 10:30 AM - 4:00 PM</p>
+<p>Sunday: Closed</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Categories -->
+<section id="oceanmiracle-products" class="py-16 bg-white">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Product Categories</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore our comprehensive range of high-quality building materials and electrical components</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Category 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=luxury%2520modern%2520chandeliers%2520and%2520lighting%2520fixtures%2520displayed%2520in%2520elegant%2520showroom%252C%2520various%2520pendant%2520lights%2520and%2520ceiling%2520lamps%2520with%2520crystal%2520and%2520metal%2520designs%252C%2520professional%2520product%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=2&orientation=landscape" alt="Lighting Products" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+<i class="ri-lightbulb-line text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Lighting</h3>
+<p class="text-gray-600 mb-4">Chandeliers, POP lights, bulbs, and decorative lighting solutions for any space.</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View Products
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%2520electrical%2520accessories%2520including%2520sockets%252C%2520wires%252C%2520switches%2520and%2520electrical%2520components%2520neatly%2520arranged%2520on%2520display%252C%2520high-quality%2520building%2520materials%2520for%2520construction%252C%2520clean%2520white%2520background%2520for%2520product%2520showcase&width=600&height=400&seq=3&orientation=landscape" alt="Electrical Accessories" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+<i class="ri-plug-line text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Electrical Accessories</h3>
+<p class="text-gray-600 mb-4">Sockets, wires, changeover switches, lightning rods, and more.</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View Products
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%2520ceiling%2520fans%2520and%2520standing%2520fans%2520displayed%2520in%2520showroom%252C%2520variety%2520of%2520cooling%2520solutions%2520for%2520home%2520and%2520office%252C%2520elegant%2520designs%2520with%2520different%2520finishes%252C%2520professional%2520product%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=4&orientation=landscape" alt="Cooling Solutions" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+<i class="ri-windy-line text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Cooling Solutions</h3>
+<p class="text-gray-600 mb-4">Ceiling fans, standing fans, and ventilation systems for optimal comfort.</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View Products
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%2520building%2520materials%2520display%2520with%2520various%2520construction%2520supplies%2520neatly%2520arranged%252C%2520high-quality%2520materials%2520for%2520contractors%2520and%2520builders%252C%2520clean%2520organized%2520presentation%2520with%2520white%2520background%2520for%2520product%2520showcase&width=600&height=400&seq=5&orientation=landscape" alt="Building Materials" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+<i class="ri-building-line text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Building Materials</h3>
+<p class="text-gray-600 mb-4">Quality construction supplies for residential and commercial projects.</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View Products
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Introduction -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-900 mb-6">About Ocean Miracle LTD</h2>
+<p class="text-gray-600 mb-6">Since 2010, Ocean Miracle LTD has been a trusted supplier of premium building materials and electrical components across the region. We take pride in offering only the highest quality products sourced from reputable manufacturers worldwide.</p>
+<p class="text-gray-600 mb-6">Our team of experts is dedicated to providing exceptional customer service and technical support to ensure you find the right solutions for your projects, whether you're a homeowner, contractor, or large construction firm.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+    <a href="./index2.html">
+<button  class="bg-primary hover:bg-primary/90 text-white py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+Learn More About Us
+</button></a>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=modern%2520electrical%2520supply%2520showroom%2520interior%2520with%2520professional%2520staff%2520helping%2520customers%252C%2520displays%2520of%2520chandeliers%252C%2520fans%2520and%2520electrical%2520components%252C%2520bright%2520well-organized%2520space%2520with%2520clean%2520white%2520background&width=600&height=450&seq=6&orientation=landscape" alt="Ocean Miracle Showroom" class="w-full h-auto rounded-lg shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<!-- Resources Section -->
+<section id="resources-hub" class="py-16 bg-white">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Helpful Resources</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore guides and tips to help you make informed decisions about your electrical and building needs from other sources</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Resource 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=elegant%2520home%2520interior%2520with%2520various%2520light%2520fixtures%2520and%2520chandeliers%2520showing%2520different%2520lighting%2520options%2520for%2520living%2520spaces%252C%2520professional%2520interior%2520design%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=7&orientation=landscape" alt="Light Fixture Guide" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">How to Choose the Right Light Fixtures</h3>
+<p class="text-gray-600 mb-4">Learn about different types of lighting, their ideal placements, and how to create the perfect ambiance for each room in your home or office.</p>
+<a href="https://www.hunterfan.com/blogs/hunter-blog/lighting-101-your-how-to-guide-for-choosing-the-right-light-for-your-space" class="inline-flex items-center text-primary font-medium">
+Read More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Resource 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%2520ceiling%2520fan%2520installation%2520in%2520elegant%2520room%2520showing%2520proper%2520placement%2520for%2520optimal%2520airflow%252C%2520energy%2520efficient%2520cooling%2520solution%2520for%2520home%252C%2520professional%2520interior%2520photography%2520with%2520clean%2520white%2520background&width=600&height=400&seq=8&orientation=landscape" alt="Fan Efficiency Tips" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Fan Placement and Energy Efficiency Tips</h3>
+<p class="text-gray-600 mb-4">Discover the optimal placement for ceiling and standing fans to maximize airflow and reduce energy consumption in your spaces.</p>
+<a href="https://african.land/blog/article/effective-fan-placement-for-cooling-homes-in-lagos-african-land-guide-b1762" class="inline-flex items-center text-primary font-medium">
+Read More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Resource 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden transition-all hover-scale hover-shadow">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=professional%2520electrician%2520safely%2520working%2520on%2520electrical%2520panel%2520wearing%2520proper%2520safety%2520equipment%252C%2520electrical%2520safety%2520demonstration%2520for%2520homeowners%252C%2520clean%2520organized%2520workspace%2520with%2520white%2520background&width=600&height=400&seq=9&orientation=landscape" alt="Electrical Safety" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Electrical Safety for Homeowners</h3>
+<p class="text-gray-600 mb-4">Essential safety tips and guidelines to help you maintain a safe electrical system in your home and prevent potential hazards.</p>
+<a href="https://www.constellation.com/energy-101/electrical-safety-tips.html" class="inline-flex items-center text-primary font-medium">
+Read More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Trusted by homeowners, contractors, and construction firms across the region</p>
+</div>
+<div class="testimonial-container mb-16">
+<div class="testimonial-slider">
+<!-- Testimonial 1 -->
+<div class="min-w-[350px] md:min-w-[400px] p-4">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Ocean Miracle Ltd has been our go-to supplier for all electrical components for our construction projects. Their quality and reliability are unmatched in the industry."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-user-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Michael Ogene</h4>
+<p class="text-sm text-gray-500">Horizon Construction Ltd.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[350px] md:min-w-[400px] p-4">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"As an interior designer, I rely on quality lighting fixtures to complete my projects. Ocean Miracle Ltd always has the perfect chandeliers and light fixtures that my clients love."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-user-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Faith Uzoamaka</h4>
+<p class="text-sm text-gray-500">Elegant Interiors</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[350px] md:min-w-[400px] p-4">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Their technical support team is exceptional. They helped me select the right electrical components for my home renovation project and provided valuable installation advice."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-user-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Dapo Oluwafemi </h4>
+<p class="text-sm text-gray-500">Homeowner</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 4 -->
+<div class="min-w-[350px] md:min-w-[400px] p-4">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"As an electrical contractor, I appreciate their extensive inventory and quick delivery times. Ocean Miracle Ltd has never let me down when I needed materials urgently."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-user-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">Hadiza Umar</h4>
+<p class="text-sm text-gray-500">Wilson Electrical Services</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Duplicate testimonials for continuous scrolling -->
+<div class="min-w-[350px] md:min-w-[400px] p-4">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Ocean Miracle Ltd has been our go-to supplier for all electrical components for our construction projects. Their quality and reliability are unmatched in the industry."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mr-4">
+<i class="ri-user-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900">David Precious</h4>
+<p class="text-sm text-gray-500">Horizon Construction Ltd.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Logos -->
+<div class="py-8">
+<h3 class="text-xl font-semibold text-gray-900 text-center mb-8">Trusted By</h3>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+<div class="flex items-center text-gray-400 hover:text-gray-600">
+<div class="w-10 h-10 flex items-center justify-center mr-2">
+<i class="ri-building-4-line text-3xl"></i>
+</div>
+<span class="text-lg font-medium">Chioma Builders</span>
+</div>
+<div class="flex items-center text-gray-400 hover:text-gray-600">
+<div class="w-10 h-10 flex items-center justify-center mr-2">
+<i class="ri-home-4-line text-3xl"></i>
+</div>
+<span class="text-lg font-medium">Elite Properties</span>
+</div>
+<div class="flex items-center text-gray-400 hover:text-gray-600">
+<div class="w-10 h-10 flex items-center justify-center mr-2">
+<i class="ri-building-2-line text-3xl"></i>
+</div>
+<span class="text-lg font-medium">Skyline Development</span>
+</div>
+<div class="flex items-center text-gray-400 hover:text-gray-600">
+<div class="w-10 h-10 flex items-center justify-center mr-2">
+<i class="ri-hotel-line text-3xl"></i>
+</div>
+<span class="text-lg font-medium">Grand Hotels Group</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 bg-primary">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+<p class="text-white/90 max-w-2xl mx-auto mb-8">Contact our team of experts today to discuss your building material and electrical component needs</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4"><a href="https://wa.me/+2348166372734">
+<button id="contactUsBtn" class="bg-white hover:bg-gray-100 text-primary py-3 px-8 font-medium !rounded-button whitespace-nowrap">
+Talk to Us
+</button></a>
+
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- Company Info -->
+<div>
+<a  class="font-['Pacifico'] text-white text-2xl mb-6 inline-block">Ocean Miracle Ltd</a>
+<p class="text-gray-400 mb-6">Your trusted supplier of building materials and electrical components since 2010.</p>
+<div class="flex space-x-4">
+<a  class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full">
+<i class="ri-facebook-fill"></i>
+</a>
+<a  class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full">
+<i class="ri-instagram-line"></i>
+</a>
+<a  class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a  class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full">
+<i class="ri-twitter-x-line"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+<li><a  class="text-gray-400 hover:text-white">Products</a></li>
+<li><a href="#resources-hub" class="text-gray-400 hover:text-white">Resources</a></li>
+<li><a href="index2.html" class="text-gray-400 hover:text-white">About Us</a></li>
+<li><a href="index2.html#contact-section" class="text-gray-400 hover:text-white">Contact</a></li>
+<li><a href="index2.html#privacy-policy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">12 Okpanam Road, Asaba<br>Delta State,  420320</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">(+234) 816-637-2734</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-whatsapp-line"></i>
+</div>
+<span class="text-gray-400">(+234) 816-637-2734</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@oceanmiracle.com</span>
+</li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div>
+<h3 class="text-lg font-semibold mb-6">Subscribe to Our Newsletter</h3>
+<p class="text-gray-400 mb-4">Stay updated with our latest products and offers</p>
+<form class="mb-4">
+<div class="flex">
+<input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border-none text-white focus:bg-gray-700 rounded-l !rounded-button">
+<button type="submit" class="bg-primary hover:bg-primary/90 px-4 py-2 !rounded-button rounded-l-none whitespace-nowrap">
+Subscribe
+</button>
+</div>
+</form>
+<div class="flex space-x-3">
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-visa-fill text-xl"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-mastercard-fill text-xl"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-paypal-fill text-xl"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<p class="text-center text-gray-500">© 2025 Ocean Miracle LTD. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle
+const menuButton = document.querySelector('button.md\\:hidden');
+const mobileNav = document.querySelector('nav');
+if (menuButton && mobileNav) {
+menuButton.addEventListener('click', function() {
+mobileNav.classList.toggle('hidden');
+mobileNav.classList.toggle('flex');
+mobileNav.classList.toggle('flex-col');
+mobileNav.classList.toggle('absolute');
+mobileNav.classList.toggle('top-16');
+mobileNav.classList.toggle('right-4');
+mobileNav.classList.toggle('bg-white');
+mobileNav.classList.toggle('p-4');
+mobileNav.classList.toggle('shadow-lg');
+mobileNav.classList.toggle('rounded-lg');
+mobileNav.classList.toggle('z-50');
+});
+}
+// Contact modal functionality
+const contactButtons = document.querySelectorAll('#contactUsBtn');
+const contactModal = document.getElementById('contactModal');
+const closeModal = document.getElementById('closeModal');
+const contactForm = document.getElementById('contactForm');
+contactButtons.forEach(button => {
+button.addEventListener('click', () => {
+contactModal.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+});
+});
+closeModal.addEventListener('click', () => {
+contactModal.classList.add('hidden');
+document.body.style.overflow = '';
+});
+contactModal.addEventListener('click', (e) => {
+if (e.target === contactModal) {
+contactModal.classList.add('hidden');
+document.body.style.overflow = '';
+}
+});
+contactForm.addEventListener('submit', (e) => {
+e.preventDefault();
+const formData = new FormData(contactForm);
+const data = Object.fromEntries(formData);
+fetch('', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/x-www-form-urlencoded',
+},
+body: new URLSearchParams(data),
+})
+.then(response => {
+if (response.ok) {
+contactForm.reset();
+contactModal.classList.add('hidden');
+document.body.style.overflow = '';
+const successMessage = document.createElement('div');
+successMessage.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
+successMessage.textContent = 'Message sent successfully!';
+document.body.appendChild(successMessage);
+setTimeout(() => {
+successMessage.remove();
+}, 3000);
+}
+})
+.catch(error => {
+console.error('Error:', error);
+});
+});
+});
+</script>
+</body>
+</html>
